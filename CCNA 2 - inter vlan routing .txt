@@ -1,0 +1,16 @@
+>enable
+#interface g0/0.10
+#description Default Gateway vlan 10 - Students
+#encapsulation dot1Q 10
+#ip address 192.168.10.1 255.255.255.0
+#exit
+
+#interface g0/0.20
+#description Default Gateway vlan 20 - teachers
+#encapsulation dot1Q 20
+#ip address 192.168.20.1 255.255.255.0
+#exit
+
+#interface g0/0
+#description Trunk to S1
+#no shutdown
