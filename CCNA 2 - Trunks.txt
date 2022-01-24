@@ -1,0 +1,6 @@
+>enable
+#interface g0/1
+#switchport mode trunk
+#switchport trunk allowd vlan 10,20
+#switchport trunk native vlan 1
+#switchport nonegotiate
