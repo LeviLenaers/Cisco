@@ -3,3 +3,19 @@
 # hostname SW01
 # banner moth "Verboden toegang"
 # enable secret cisco
+# line con 0
+# password cisco
+# login
+# exit
+# username admin password cisco
+# # ip domain-name cisco.be
+# crypto key generate rsa general-key modulus 1024
+# line vty 0 15
+# transport input ssh
+# login local
+# service password-encryption
+# interface g0/0
+# ip address 192.168.1.1 255.255.255.0
+# no shutdown
+# desc Link to LAN 1
+# exit
